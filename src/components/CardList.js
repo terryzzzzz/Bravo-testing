@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Card from '../components/Card'
 
-import PlaceholderDesktop from '../assets/Desktop-Tablet_placeholder-A.png'
-import PlaceholderDesktop2X from '../assets/Desktop-Tablet_placeholder-A@2x.png'
-import PlaceholderMobile from '../assets/Mobile_placeholder-A@2x.png'
-import PlaceholderMobile2X from '../assets/Mobile_placeholder-A@2x.png'
-
 export default function CardList() {
 
     const [cardList, setCardList] = useState(null)
