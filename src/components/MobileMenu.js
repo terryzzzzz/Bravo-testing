@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import MenuIcon from '../assets/menu_icon.svg'
 import CloseIcon from '../assets/close_icon.svg'
 import Logo from '../assets/logo.svg'
@@ -10,6 +10,14 @@ export default function MobileMenu() {
     const handleClick = () => {
         setIsOpen(!isOpen)
     }
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = "auto"
+        }
+    }, [isOpen])
 
     return (
         <div>
